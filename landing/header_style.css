@@ -2,12 +2,6 @@
     --default-padding: 16px;
 }
 
-.landing-body {
-    margin: 0;
-    padding: 0;
-    background-color: #282828;
-}
-
 .landing-header {
     display: flex;
     background-color: black;
@@ -20,8 +14,20 @@
 .start {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
     color: white;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    padding-left: var(--default-padding);
+    padding-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
 }
 
 .mid {
@@ -84,13 +90,13 @@
     transition: 0.5s ease;
 }
 
-.membership {
-    width: 120px;
+.pricing {
+    width: 100px;
 }
 
-.membership:hover ~ .selector{
+.pricing:hover ~ .selector{
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: 100%;
     left: 150px;
     background-color: black;
@@ -107,7 +113,7 @@
     position: absolute;
     width: 120px;
     height: 100%;
-    left: 270px;
+    left: 250px;
     background-color: black;
     border-radius: var(--default-padding);
     z-index: 1;
@@ -125,28 +131,9 @@
     transition: 0.5s ease;
 }
 
-/* .selector {
-    position: absolute;
-    width: 0px;
-    height: 100%;
-    left: 0px;
-    background-color: black;
-    border-radius: var(--default-padding);
-    z-index: 1;
-    transition: 0.5s ease;
-} */
-
 .end {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    color: white;
-}
-
-.landing-main {
-    color: white;
-}
-
-.landing-footer {
     color: white;
 }
