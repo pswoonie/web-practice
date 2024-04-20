@@ -5,3 +5,15 @@
 .landing-main {
     color: white;
 }
+
+.landing-cover {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background: linear-gradient(black, gray);
+    justify-content: center;
+}
+
+.cool-monkey-img {
+    padding-top: 100px;
+}
