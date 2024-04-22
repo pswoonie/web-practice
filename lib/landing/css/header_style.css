@@ -218,6 +218,7 @@
 .mid form:hover input,
 .mid form:valid input {
     display: block;
+    
 }
 
 .mid form:hover .fa-solid.fa-magnifying-glass,
