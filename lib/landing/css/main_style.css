@@ -142,6 +142,64 @@
    ========================== DIVIDER ==========================
    ============================================================= */
 
-/* This is cover section 
+.landing-main ul .section1,
+.landing-main ul .section2,
+.landing-main ul .section3 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* This is list section #1: coding monkey
 ========================== start Here ==========================
 */
+
+
+
+.coding-monkey-img {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+/* This is list section #2: goggles monkey
+========================== start Here ==========================
+*/
+.goggles-img {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+/* This is list section #3: space monkey
+========================== start Here ==========================
+*/
+.space-monkey-img {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+
