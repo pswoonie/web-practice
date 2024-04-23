@@ -151,19 +151,67 @@
   flex-direction: row;
 }
 
+.landing-main ul .section1 p,
+.landing-main ul .section2 p,
+.landing-main ul .section3 p {
+  padding: 0 0;
+  margin: 0 0;
+}
+
 /* This is list section #1: coding monkey
 ========================== start Here ==========================
 */
 
-
-
-.coding-monkey-img {
-  height: 600px;
-  width: 100%;
-  object-fit: contain;
+.landing-main ul .section1 {
+  background-color: #1e1e1e;
+  justify-content: center;
 }
 
+.coding-monkey-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section1-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
 
+@keyframes on-scroll-section1-img {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.landing-main ul .section1 p {
+  height: 200px;
+  width: 600px;
+  font-size: 50px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section1-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section1-p {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 
 
@@ -174,17 +222,57 @@
 /* This is list section #2: goggles monkey
 ========================== start Here ==========================
 */
-.goggles-img {
-  height: 600px;
-  width: 100%;
-  object-fit: contain;
+
+.landing-main ul .section2 {
+  background-color: #0f0f0f;
+  justify-content: center;
 }
 
+.goggles-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section2-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
 
+@keyframes on-scroll-section2-img {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.landing-main ul .section2 p {
+  height: 300px;
+  width: 600px;
+  font-size: 100px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section2-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
 
-
-
+@keyframes on-scroll-section2-p {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 
 /* =============================================================
@@ -194,12 +282,55 @@
 /* This is list section #3: space monkey
 ========================== start Here ==========================
 */
-.space-monkey-img {
-  height: 600px;
-  width: 100%;
-  object-fit: contain;
+
+.landing-main ul .section3 {
+  background-color: #1e1e1e;
+  justify-content: center;
 }
 
+.space-monkey-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section3-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
 
+@keyframes on-scroll-section3-img {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.landing-main ul .section3 p {
+  height: 200px;
+  width: 600px;
+  font-size: 50px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section3-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section3-p {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
