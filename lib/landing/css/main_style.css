@@ -54,28 +54,39 @@
     text-align: center;
 }
 
-.landing-cover span button {
+.landing-cover nav a button{
     width: 130px;
     margin: var(--default-padding) 10px;
     padding: 0.6em 2em;
     border: none;
     outline: none;
-    color: white;
     background: black;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    text-decoration: none;
+    color: white;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
 
-.landing-cover span button:hover {
+.landing-cover nav a,
+.landing-cover nav a:link,
+.landing-cover nav a:active,
+.landing-cover nav a:focus,
+.landing-cover nav a:hover,
+.landing-cover nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.landing-cover nav a button:hover {
     transform: scale(1.05);
 }
 
-.landing-cover span button:before {
+.landing-cover nav a button:before {
     content: "";
     background: linear-gradient(
       45deg,
@@ -115,7 +126,7 @@
     }
   }
   
-  .landing-cover span button:after {
+  .landing-cover nav a button:after {
     z-index: -1;
     content: "";
     position: absolute;
