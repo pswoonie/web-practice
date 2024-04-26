@@ -1,9 +1,150 @@
-body {
-    padding: 0 0;
-    margin: 0 0;
+
+.left,
+.right {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x:hidden;
+}
+
+.left {
+    left: 0;
     background-color: black;
 }
 
-body div {
-    color: white;
+.right {
+    right: 0;
+    background-color: gray;
+}
+
+/* carousel section */
+.carousel {
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[name=slider-group] {
+    display: none;
+}
+
+.carousel .slides {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 16px;
+}
+
+.left .carousel .slides::-webkit-scrollbar {
+    display: none;
+}
+
+.slides .img {
+    height: 300px;
+    width: 300px;
+    scroll-snap-align: center;
+    transition: 500ms ease;
+}
+
+.buttons {
+    height: 12px;
+    width: 300px;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons label div{
+    height: 12px;
+    width: 12px;
+    padding: 0 0;
+    margin: 0 6px;
+    background-color: white;
+    border-radius: 25px;
+    transition: 500ms ease;
+}
+
+/* button 1 */
+#radio1:checked ~ .slides img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#radio1:checked ~ .buttons label .btn1 {
+    padding: 0 8px;
+    background-color: red;
+}
+
+/* button 2 */
+#radio2:checked ~ .slides img {
+    opacity: 1;
+    transform: translateX(-100%);
+}
+
+#radio2:checked ~ .buttons label .btn2 {
+    padding: 0 8px;
+    background-color: red;
+}
+
+/* button 3 */
+#radio3:checked ~ .slides img {
+    opacity: 1;
+    transform: translateX(-200%);
+}
+
+#radio3:checked ~ .buttons label .btn3 {
+    padding: 0 8px;
+    background-color: red;
+}
+
+/* login  section */
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login img {
+    height: 30%;
+    width: 30%;
+}
+
+.login p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.login .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login .subtitle {
+    font-size: 16px;
+}
+
+.login div label {
+    display: block;
+}
+
+.login #login {
+    display: block;
+}
+
+.login #google-signin {
+    height: 50px;
+    width: 300px;
+    object-fit: contain;
 }

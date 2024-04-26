@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    
+
      <!-- css files -->
      <link rel="stylesheet" href="css/body_style.css">
 </head>
 <body>
-    <div>login</div>
+    <div class="left">
+        <div class="carousel">
+            <input type="radio" name="slider-group" id="radio1" checked />
+            <input type="radio" name="slider-group" id="radio2" />
+            <input type="radio" name="slider-group" id="radio3" />
+            <div class="slides">
+                <img class="img" src="../../assets/cool_monkey.png" 
+                    atl="cool monkey">
+                <img class="img" src="../../assets/coding_monkey.png" 
+                    atl="coding monkey">
+                <img class="img" src="../../assets/goggles.png" 
+                    atl="goggles">
+            </div>
+            <div class="buttons">
+                <label for="radio1">
+                    <div class="btn1"></div>
+                </label>
+                <label for="radio2">
+                    <div class="btn2"></div>
+                </label>
+                <label for="radio3">
+                    <div class="btn3"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="login">
+            <img src="../../assets/logo.png" alt="logo">
+            <p class="title">Welcome!</p>
+            <p class="subtitle">Please Enter Your Information Below</p>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div>
+                <label for="pswd">Password</label>
+                <input type="text" name="password" id="pswd" />
+            </div>
+            <span>Remember Me</span>
+            <span>Forgot Password?</span>
+            <input type="submit" id="login" value="Login" />
+            <input type="image" id="google-signin" src="../../assets/google_signin_long.png" />
+            <p>Don't have an account? <span><a href="#">Sign up</a></span></p>
+        </div>
+    </div>
 </body>
 </html>
