@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/body_style.css">
+    <link rel="stylesheet" href="css/header_style.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/footer_style.css">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="landing-body">
+    <header class="landing-header">
+        <!-- This is header logo section -->
+        <div class="start">
+            <img class="logo-img" src="../../assets/logo.png" alt="logo">
+            <span class="logo-text">SPACE GEKKO</span>
+        </div>
+        <!-- This is header tab menu section -->
+        <div class="mid">
+            <nav class="navigation">
+                <ul>
+                    <li class="home"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="about"><a href="#">About</a></li>
+                    <li class="pricing"><a href="#">Pricing</a></li>
+                    <li class="dashboard"><a href="#">Dashboard</a></li>
+                    <span class="selector"></span>
+                </ul>
+            </nav>
+            <div class="search">
+                <form action="">
+                    <input id="temp-id" type="search" placeholder="search..." required>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+        <!-- This is profile and setting related section -->
+        <div class="end">
+            <button class="dropdown-button">
+                <i class="fa-solid fa-user-large"></i>
+                <span class="v-divider">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <ul>
+                    <li class="menu1" href="#">
+                        <i class="fa-solid fa-user-large"></i>
+                        <span>Profile</span>
+                    </li>
+                    <li class="menu2" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </li>
+                    <li class="menu3" href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <span>Help Center</span>
+                    </li>
+                    <span class="divider"></span>
+                    <li class="menu4" href="#">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- main body here-->
+    <main class="landing-main">
+        <ul>
+            <!-- landing cover section -->
+            <li class="landing-cover">
+                <p class="big-words">Build Web Apps<br>& Learn To Code</br></p>
+                <p class="statement">
+                    This is your chance to enhance you web<br>development skills. Join us now!</br>
+                </p>
+                <nav>
+                    <a href="../login/login.html"><button>Get Started</button></a>
+                    <a href="../signup/signup.html"><button>Sign Up</button></a>
+                </nav>
+                <img class="cool-monkey-img" src="../../assets/cool_monkey_frame.png" alt="cool monkey frame">
+            </li>
+            <!-- image sections -->
+            <li class="section1">
+                <img class="coding-monkey-img" src="../../assets/coding_monkey.png" alt="coding monkey">
+                <p>It's not a bug. It's an undocumented feature</p>
+            </li>
+            <li class="section2">
+                <img class="goggles-img" src="../../assets/goggles.png" alt="goggles frame">
+                <p>HTML CSS JAVASCRIPT</p>
+            </li>
+            <li class="section3">
+                <img class="space-monkey-img" src="../../assets/space_monkey.png" alt="space monkey">
+                <p>Software comes from heaven when you have good hardware.</p>
+            </li>
+        </ul>
+    </main>
+    <!-- footer here -->
+    <footer class="landing-footer">
+        <ul>
+            <li class="title">INFORMATIONS</li>
+            <li><a href="#">Support docs</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="title">RESOURCES</li>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Official Blog</a></li>
+        </ul>
+        <ul>
+            <li class="title">COMPANY</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

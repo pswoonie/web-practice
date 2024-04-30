@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+     <!-- css files -->
+     <link rel="stylesheet" href="css/body_style.css">
+
+     <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="left">
+        <div class="carousel">
+            <input type="radio" name="slider-group" id="radio1" checked />
+            <input type="radio" name="slider-group" id="radio2" />
+            <input type="radio" name="slider-group" id="radio3" />
+            <div class="slides">
+                <img class="img" src="../../assets/cool_monkey.png" 
+                    atl="cool monkey">
+                <img class="img" src="../../assets/coding_monkey.png" 
+                    atl="coding monkey">
+                <img class="img" src="../../assets/goggles.png" 
+                    atl="goggles">
+            </div>
+            <div class="buttons">
+                <label for="radio1">
+                    <div class="btn1"></div>
+                </label>
+                <label for="radio2">
+                    <div class="btn2"></div>
+                </label>
+                <label for="radio3">
+                    <div class="btn3"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="login">
+            <img src="../../assets/logo.png" alt="logo">
+            <p class="title">Welcome!</p>
+            <p class="subtitle">Please Enter Your Information Below</p>
+            <div class="input1">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="input2">
+                <label for="pswd">Password</label>
+                <input type="text" name="password" id="pswd" />
+                <i class="fa-solid fa-eye-slash"></i>
+                <!-- <div>
+                    <input type="radio" name="obscure" id="not-show" value="not-show" checked />
+                    <label for="not-show"><i class="fa-solid fa-eye-slash"></i></label>
+                    <input type="radio" name="obscure" id="show" value="show" />
+                    <label for="show"><i class="fa-solid fa-eye"></i></label>
+                </div> -->
+            </div>
+            <div class="input3">
+                <div>
+                    <input type="checkbox" name="check" id="check" />
+                    <label for="check">Remember Me</label>
+                </div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <input type="submit" id="login" value="Login" />
+            <div class="or"><p>OR</p></div>
+            <div class="last">
+                <input type="image" id="google-signin" src="../../assets/google_signin_long.png" />
+                <p class="no-account">Don't have an account? <span><a href="#">Sign up</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

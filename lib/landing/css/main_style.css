@@ -1,0 +1,347 @@
+:root {
+    --default-padding: 16px;
+}
+
+.landing-main {
+    background-color: black;
+}
+
+.landing-main ul {
+    display: block;
+    padding: 0 0;
+    margin:  0 0;
+    color: white;
+}
+
+.landing-main ul li {
+    width: 100%;
+    list-style: none;
+}
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+/* This is cover section 
+========================== Start Here ==========================
+*/
+.landing-cover {
+    height: 830px;
+    width: 100%;
+    background: linear-gradient(transparent, #0f0f0f, #1e1e1e, gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-cover p {
+    margin: 0 0;
+}
+
+.landing-cover .big-words {
+    width: 400px;
+    padding: 80px 0 0 0;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.landing-cover .statement {
+    width: 340px;
+    font-size: var(--default-padding);
+    color: #d6d6d6;
+    text-align: center;
+}
+
+.landing-cover nav a button{
+    width: 130px;
+    margin: var(--default-padding) 10px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.landing-cover nav a,
+.landing-cover nav a:link,
+.landing-cover nav a:active,
+.landing-cover nav a:focus,
+.landing-cover nav a:hover,
+.landing-cover nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.landing-cover nav a button:hover {
+    transform: scale(1.05);
+}
+
+.landing-cover nav a button:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .landing-cover nav a button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+.landing-cover .cool-monkey-img {
+    height: 470px;
+    width: 400px;
+    object-fit: contain;
+    margin: 60px 0;
+}
+
+/* This is cover section 
+========================== End Here ==========================
+*/
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+.landing-main ul .section1,
+.landing-main ul .section2,
+.landing-main ul .section3 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing-main ul .section1 p,
+.landing-main ul .section2 p,
+.landing-main ul .section3 p {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+/* This is list section #1: coding monkey
+========================== start Here ==========================
+*/
+
+.landing-main ul .section1 {
+  background-color: #1e1e1e;
+  justify-content: center;
+}
+
+.coding-monkey-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section1-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section1-img {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.landing-main ul .section1 p {
+  height: 200px;
+  width: 600px;
+  font-size: 50px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section1-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section1-p {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+/* This is list section #2: goggles monkey
+========================== start Here ==========================
+*/
+
+.landing-main ul .section2 {
+  background-color: #0f0f0f;
+  justify-content: center;
+}
+
+.goggles-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section2-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section2-img {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.landing-main ul .section2 p {
+  height: 300px;
+  width: 600px;
+  font-size: 100px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section2-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section2-p {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* =============================================================
+   ========================== DIVIDER ==========================
+   ============================================================= */
+
+/* This is list section #3: space monkey
+========================== start Here ==========================
+*/
+
+.landing-main ul .section3 {
+  background-color: #1e1e1e;
+  justify-content: center;
+}
+
+.space-monkey-img {
+  height: 500px;
+  width: 500px;
+  margin-right: 100px;
+  object-fit: contain;
+  align-self: center;
+  animation: on-scroll-section3-img linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section3-img {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.landing-main ul .section3 p {
+  height: 200px;
+  width: 600px;
+  font-size: 50px;
+  font-weight: bold;
+  align-self: center;
+  animation: on-scroll-section3-p linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: contain 50px;
+}
+
+@keyframes on-scroll-section3-p {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

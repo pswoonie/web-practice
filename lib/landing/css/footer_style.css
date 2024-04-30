@@ -1,0 +1,36 @@
+:root {
+    --default-padding: 16px;
+}
+
+.landing-footer {
+    height: 250px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-footer ul {
+    min-height: 120px;
+    min-width: 120px;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.landing-footer ul li{
+    list-style: none;
+}
+
+.landing-footer ul .title {
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.landing-footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
