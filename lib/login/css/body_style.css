@@ -19,6 +19,11 @@
     background-color: gray;
 }
 
+a {
+    text-decoration: none;
+    color: blue;
+}
+
 /* carousel section */
 .carousel {
     /* background-color: blue; */
@@ -127,24 +132,125 @@
 }
 
 .login .title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .login .subtitle {
     font-size: 16px;
+    color: white;
+    margin-bottom: 16px;
 }
 
 .login div label {
     display: block;
+    color: #d3d3d3;
+}
+
+/* email & password */
+.login .input1,
+.login .input2 {
+    margin-bottom: 16px;
+}
+
+.login .input1 input, 
+.login .input2 input, 
+.login .input1 input:focus, 
+.login .input2 input:focus {
+    height: 30px;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+/* obscure icon action */
+.login .input2 input {
+    position: relative;
+    -webkit-text-security: disc;
+    /* text-security: disc; */
+}
+
+.login .input2 i {
+    position: absolute;
+    top: 295px;
+    right: 20px;
+}
+
+/* input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label i{
+    display: block;
+}
+
+input[type="radio"]:not(:checked) + label i {
+    display: none;
+} */
+
+
+/* remember me & forgot password */
+.login .input3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login .input3 div {
+    display: flex;
+    flex-direction: row;
 }
 
 .login #login {
-    display: block;
+    height: 50px;
+    width: 350px;
+    margin: 16px 0;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+
+.or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    flex: 1;
+}
+
+.or:before {
+    content: '';
+    height: 1px;
+    width: 100px;
+    background: black;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.or:after {
+    content: '';
+    height: 1px;
+    width: 100px;
+    background: black;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.login .last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login #google-signin {
     height: 50px;
-    width: 300px;
+    width: 220px;
+    margin-top: 16px;
     object-fit: contain;
+}
+
+.login .no-account {
+    margin-top: 16px;
+    align-content: center;
 }
